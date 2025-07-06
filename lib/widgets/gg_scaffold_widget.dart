@@ -35,7 +35,9 @@ class GGScaffoldWidget extends StatelessWidget {
         decoration: const BoxDecoration(
           image: DecorationImage(
             opacity: 0.50,
-            image: AssetImage("assets/images/${Constants.backgroundSprite}"),
+            image: AssetImage(
+              "packages/gift_grab_ui/assets/images/${Constants.backgroundSprite}",
+            ),
             fit: BoxFit.cover,
           ),
         ),

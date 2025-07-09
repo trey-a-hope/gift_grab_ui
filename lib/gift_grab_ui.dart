@@ -32,6 +32,7 @@ export 'sprite_components/santa_component.dart';
 
 // Util
 export 'util/modal_util.dart';
+export 'util/stream_to_listenable_util.dart';
 
 // Widgets
 export 'widgets/game_over_overlay.dart';

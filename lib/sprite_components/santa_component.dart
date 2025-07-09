@@ -3,11 +3,7 @@ import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flame_bloc/flame_bloc.dart';
-import 'package:gift_grab_ui/blocs/game/game_bloc.dart';
 import 'package:gift_grab_ui/gift_grab_ui.dart';
-import 'package:gift_grab_ui/sprite_components/cookie_component.dart';
-import 'package:gift_grab_ui/sprite_components/flame_component.dart';
-import 'package:gift_grab_ui/sprite_components/gift_component.dart';
 
 enum MovementState { idle, slideLeft, slideRight, frozen }
 

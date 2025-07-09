@@ -65,7 +65,7 @@ class ModalUtil {
       margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       borderRadius: BorderRadius.circular(12),
       showProgressBar: false,
-      closeButtonShowType: CloseButtonShowType.onHover,
+      closeButton: ToastCloseButton(showType: CloseButtonShowType.onHover),
       closeOnClick: true,
     );
   }

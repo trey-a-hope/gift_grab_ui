@@ -1,13 +1,12 @@
 import 'dart:math';
 
 import 'package:flame/components.dart';
-import 'package:flame/game.dart';
 import 'package:flame_bloc/flame_bloc.dart';
 import 'package:gift_grab_ui/blocs/game/game_bloc.dart';
 import 'package:gift_grab_ui/sprite_components/flame_component.dart';
 
-class FlameSpawner<T extends FlameGame> extends Component
-    with HasGameReference<T>, FlameBlocListenable<GameBloc, GameState> {
+class FlameSpawner extends Component
+    with HasGameReference, FlameBlocListenable<GameBloc, GameState> {
   bool _hasSpawned = false;
 
   @override

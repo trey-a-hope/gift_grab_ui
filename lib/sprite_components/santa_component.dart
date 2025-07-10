@@ -1,16 +1,14 @@
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
-import 'package:flame/game.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flame_bloc/flame_bloc.dart';
 import 'package:gift_grab_ui/gift_grab_ui.dart';
 
 enum MovementState { idle, slideLeft, slideRight, frozen }
 
-class SantaComponent<T extends FlameGame>
-    extends SpriteGroupComponent<MovementState>
+class SantaComponent extends SpriteGroupComponent<MovementState>
     with
-        HasGameReference<T>,
+        HasGameReference,
         CollisionCallbacks,
         FlameBlocReader<GameBloc, GameState> {
   final double _spriteHeight = 200;

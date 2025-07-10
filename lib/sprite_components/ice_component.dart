@@ -1,13 +1,12 @@
 import 'dart:ui';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
-import 'package:flame/game.dart';
 import 'dart:math' as math;
 
 import 'package:gift_grab_ui/config/constants.dart';
 
-class IceComponent<T extends FlameGame> extends SpriteComponent
-    with HasGameReference<T>, CollisionCallbacks {
+class IceComponent extends SpriteComponent
+    with HasGameReference, CollisionCallbacks {
   static const double _tableHeight = 200.0;
   static const double _tabletSpeed = 300.0;
   static const double sizeRatio = 1.0;

@@ -2,14 +2,13 @@ import 'dart:ui';
 
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
-import 'package:flame/game.dart';
 import 'dart:math' as math;
 
 import 'package:gift_grab_ui/config/constants.dart';
 import 'package:gift_grab_ui/sprite_components/santa_component.dart';
 
-class CookieComponent<T extends FlameGame> extends SpriteComponent
-    with HasGameReference<T>, CollisionCallbacks {
+class CookieComponent extends SpriteComponent
+    with HasGameReference, CollisionCallbacks {
   final double _spriteHeight = 160.0;
   late Vector2 _velocity;
   double speed = 600;

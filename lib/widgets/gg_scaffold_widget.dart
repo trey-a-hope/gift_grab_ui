@@ -18,7 +18,6 @@ class GGScaffoldWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -29,15 +28,13 @@ class GGScaffoldWidget extends StatelessWidget {
                 icon: Icon(Icons.arrow_back),
               )
             : SizedBox(),
-        title: Text(title, style: theme.textTheme.displayLarge),
+        title: Text(title),
       ),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
             opacity: 0.50,
-            image: AssetImage(
-              "packages/gift_grab_ui/assets/images/${Constants.backgroundSprite}",
-            ),
+            image: AssetImage("assets/images/${Constants.backgroundSprite}"),
             fit: BoxFit.cover,
           ),
         ),

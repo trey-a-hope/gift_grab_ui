@@ -12,6 +12,7 @@ class GameOverOverlay extends StatelessWidget {
     final theme = Theme.of(context);
 
     return GGScaffoldWidget(
+      canPop: false,
       title: 'Game Over',
       child: Center(
         child: Column(
@@ -19,19 +20,14 @@ class GameOverOverlay extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 32),
-              child: Text(
-                'Score: $score',
-                style: theme.textTheme.displayLarge!.copyWith(
-                  fontSize: theme.textTheme.displayLarge!.fontSize! * 3,
-                ),
-              ),
+              child: Text('Score: $score', style: theme.textTheme.displayLarge),
             ),
             SizedBox(
               width: 400,
               height: 100,
               child: ElevatedButton(
                 onPressed: playAgain,
-                child: Text('Play Again?', style: TextStyle(fontSize: 50)),
+                child: Text('Play Again?', style: theme.textTheme.displayLarge),
               ),
             ),
           ],

@@ -2,7 +2,7 @@ class Constants {
   Constants._();
 
   /// Time Limits
-  static const int gameTimeLimit = 30;
+  static const int gameTimeLimit = 5;
 
   /// Audio
   static const String freezeSound = 'freeze-sound.wav';

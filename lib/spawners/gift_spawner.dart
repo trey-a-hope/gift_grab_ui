@@ -1,10 +1,8 @@
 import 'dart:math';
 import 'package:flame/components.dart';
-import 'package:flame/game.dart';
 import 'package:gift_grab_ui/sprite_components/gift_component.dart';
 
-class GiftSpawner<T extends FlameGame> extends Component
-    with HasGameReference<T> {
+class GiftSpawner extends Component with HasGameReference {
   final Random _random = Random();
 
   @override

@@ -12,7 +12,7 @@ class GameOverOverlay extends StatelessWidget {
     final theme = Theme.of(context);
 
     return GGScaffoldWidget(
-      canPop: false,
+      canPop: true,
       title: 'Game Over',
       child: Center(
         child: Column(

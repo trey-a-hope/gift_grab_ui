@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:grpc/grpc.dart';
 
 abstract class ErrorState {
+  const ErrorState();
   String? get error;
   ErrorState copyWith({String? error});
 }

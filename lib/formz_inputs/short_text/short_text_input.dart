@@ -58,10 +58,10 @@ class _ShortTextInputState extends State<ShortTextInput> {
         widget.onChanged?.call(value);
         _isInternalUpdate = false;
       },
-      style: theme.textTheme.displayMedium,
+      style: theme.textTheme.headlineMedium,
       decoration: InputDecoration(
         labelText: widget.labelText,
-        labelStyle: theme.textTheme.displaySmall,
+        labelStyle: theme.textTheme.headlineMedium,
         prefixIcon: const Icon(Icons.person, color: Colors.white),
         border: const OutlineInputBorder(),
         errorText: widget.shortText.errorMessage,

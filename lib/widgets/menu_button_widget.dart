@@ -60,7 +60,7 @@ enum MenuButton {
   notifications('Notifications', Lotties.notifications),
   play('Play', Lotties.play),
   profile('Profile', Lotties.profile),
-  searchUsers('Search Users', Lotties.searchUsers),
+  searchUsers('Users', Lotties.searchUsers),
   signOut('Sign Out', Lotties.signOut),
   tournaments('Tournaments', Lotties.tournament);
 

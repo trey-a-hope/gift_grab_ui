@@ -12,7 +12,7 @@ class NoResultsWidget extends StatelessWidget {
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
       Lottie.network(type.lottieUrl, height: 200),
-      Text(type.name, style: Theme.of(context).textTheme.displayLarge),
+      Text(type.name, style: Theme.of(context).textTheme.headlineLarge),
     ],
   );
 }

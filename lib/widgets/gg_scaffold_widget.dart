@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 class GGScaffoldWidget extends StatelessWidget {
   const GGScaffoldWidget({
     super.key,
-    required this.child,
     required this.title,
+    required this.child,
     this.canPop = true,
     this.actions,
   });
 
-  final Widget child;
   final String title;
+  final Widget child;
   final bool canPop;
   final List<Widget>? actions;
 

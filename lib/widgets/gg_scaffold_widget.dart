@@ -37,6 +37,8 @@ class GGScaffoldWidget extends StatelessWidget {
                 ? NetworkImage("/assets/images/background-sprite.jpg")
                 : AssetImage("assets/images/background-sprite.jpg")
                       as ImageProvider,
+
+            // TODO (Trey) - May work as just "image: AssetImage("assets/images/background-sprite.jpg")"
             fit: BoxFit.cover,
           ),
         ),

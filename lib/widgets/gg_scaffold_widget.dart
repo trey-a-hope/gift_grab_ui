@@ -34,7 +34,7 @@ class GGScaffoldWidget extends StatelessWidget {
           image: DecorationImage(
             opacity: 0.50,
             image: kIsWeb
-                ? NetworkImage("assets/images/background-sprite.jpg")
+                ? NetworkImage("/assets/images/background-sprite.jpg")
                 : AssetImage("assets/images/background-sprite.jpg")
                       as ImageProvider,
             fit: BoxFit.cover,

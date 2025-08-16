@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class GGScaffoldWidget extends StatelessWidget {
@@ -29,10 +30,13 @@ class GGScaffoldWidget extends StatelessWidget {
         title: Text(title),
       ),
       body: Container(
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           image: DecorationImage(
             opacity: 0.50,
-            image: AssetImage("assets/images/background-sprite.jpg"),
+            image: kIsWeb
+                ? NetworkImage("assets/images/background-sprite.jpg")
+                : AssetImage("assets/images/background-sprite.jpg")
+                      as ImageProvider,
             fit: BoxFit.cover,
           ),
         ),

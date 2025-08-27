@@ -34,7 +34,7 @@ enum NoResultsEnum {
   // Notifications
   notifications('No notifications', Lotties.notifications),
   // Leaderboard
-  leaderboard('No records for this week', Lotties.leaderboard),
+  leaderboard('No records', Lotties.leaderboard),
   // Users
   users('No users found', Lotties.searchUsers);
 

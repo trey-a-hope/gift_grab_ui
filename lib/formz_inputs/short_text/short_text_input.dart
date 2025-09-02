@@ -5,11 +5,13 @@ class ShortTextInput extends StatefulWidget {
   final ShortText shortText;
   final String labelText;
   final void Function(String)? onChanged;
+  final bool enabled;
 
   const ShortTextInput(
     this.shortText, {
     required this.labelText,
     this.onChanged,
+    this.enabled = true,
     super.key,
   });
 
@@ -69,6 +71,7 @@ class _ShortTextInputState extends State<ShortTextInput> {
       ),
       textInputAction: TextInputAction.next,
       maxLength: ShortText.max,
+      enabled: widget.enabled,
     );
   }
 }
